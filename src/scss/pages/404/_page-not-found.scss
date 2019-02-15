@@ -1,0 +1,32 @@
+.page-not-found {
+  position: relative;
+  background-image: url("../../src/img/bg_404.jpg");
+  background-size: cover;
+  background-position: center;
+  .page-not-found-wrapper {
+    padding-top: 220px;
+    padding-bottom: 180px;
+    h2 {
+      color: $main-light-text-color;
+      font-size: 37px;
+      font-weight: 700;
+      line-height: 49px;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+    p {
+      color: $main-text-color;
+      font-size: 21px;
+      line-height: 28px;
+      width: 400px;
+      margin-bottom: 120px;
+    }
+    a {
+      color: $orange-text-color;
+      font-size: 21px;
+      line-height: 28px;
+      display: table;
+      margin-bottom: 30px;
+    }
+  }
+}
