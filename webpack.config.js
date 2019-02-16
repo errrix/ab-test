@@ -5,7 +5,6 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
-let conf = {};
 
 module.exports = (env, options) => {
     const devMode = options.mode !== 'production';
@@ -94,8 +93,8 @@ module.exports = (env, options) => {
                 exclude: ["/vendor/"]
             }) : false,
             new CopyWebpackPlugin([
-                {from:'src/img',to:'img'},
-                {from:'src/fonts',to:'fonts'},
+                // {from:'src/img',to:'img'},
+                // {from:'src/fonts',to:'fonts'},
                 {from:'src/template',to:'template'}
             ])
         ].filter(Boolean),

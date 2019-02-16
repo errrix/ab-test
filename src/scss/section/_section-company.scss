@@ -1,0 +1,18 @@
+.section-company {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  & > * {
+    width: 25%;
+
+    @media #{$tablet} {
+      width: 50%;
+      margin-bottom: 20px;
+    }
+
+    @media #{$mobile} {
+      width: 100%;
+    }
+  }
+}

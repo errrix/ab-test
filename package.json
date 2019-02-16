@@ -1,18 +1,16 @@
 {
-  "name": "config-webpack",
+  "name": "ab-test",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --mode development --open",
-    "build": "webpack --mode production",
-    "local": "webpack --mode development --watch"
+    "build": "webpack --mode production"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "jquery": "^3.3.1",
-    "slick-carousel": "^1.8.1"
+    "jquery": "^3.3.1"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",

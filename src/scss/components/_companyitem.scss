@@ -1,0 +1,82 @@
+.companyitem {
+  height: 238px;
+  text-align: center;
+  padding: 0 15px 25px;
+  border-right: 1px solid $bordercolor;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &:last-child {
+    border-right: none;
+  }
+
+  @media #{$tablet} {
+    &:nth-child(2n) {
+      border-right: none;
+    }
+  }
+
+  @media #{$mobile} {
+    border-right: none;
+  }
+
+  &__imagewrapper {
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      object-fit: cover;
+      max-width: 100%;
+    }
+  }
+
+  &__title {
+    margin: 0 0 10px;
+    color: $titlecolor;
+    font-weight: 700;
+    line-height: 20px;
+    font-size: 16px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    color: $titlecolor;
+    font-size: 12px;
+    line-height: 18px;
+
+    @media #{$tablet} {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  }
+
+  &__buttonwrapper {
+    align-self: center;
+
+    button {
+      color: $linkcolor;
+      font-family: $mainfont;
+      font-weight: 700;
+      line-height: 14px;
+      font-size: 14px;
+      position: relative;
+      display: flex;
+
+      &:after {
+        content: '';
+        display: block;
+        width: 4px;
+        height: 4px;
+        border-bottom: 1px solid $linkcolor;
+        border-right: 1px solid $linkcolor;
+        transform: rotate(-45deg);
+        position: relative;
+        top: 6px;
+        margin-left: 6px;
+      }
+    }
+  }
+}
